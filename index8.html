@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;
+            padding: 40px;
+        }
+        .container{
+            width: 400px;
+            height: 500px;
+            background-color: whitesmoke;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow:  0px 0px 2cap black;
+            padding: 20px;
+            
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bolder;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[ type ="email"]
+        {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+            
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: rgb(78, 78, 229);
+            color: white;
+            border-color: rgb(78, 78, 229);
+            cursor: pointer;
+
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(9, 9, 235);
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        select{
+            border-radius: 5px;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="">FirstName</label>
+                <input type="text"
+                name="FirstName"
+                id="FirstName"
+                placeholder="Enter First name">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email"
+                name="FirstName"
+                id="FirstName"
+                placeholder="Enter Email">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="Password"
+                name="FirstName"
+                id="FirstName"
+                placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+                <label for="">Address</label>
+                <textarea name="address" id="address" ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">Preferd Contact Method
+                <div class="checkbox-group">
+                    <input type="radio" name="email" id="sms" value="sms">
+                    SMS
+                    
+                    </label>
+                    <label for="">Preferd Contact Method
+                <div class="checkbox-group">
+                    <input type="radio" name="email" id="mobile" value="mobile">
+                    Mobile
+                    
+                    </label>
+                    <label for="">Preferd Contact Method
+                <div class="checkbox-group">
+                    <input type="radio" name="email" id="email" value="email">
+                    Email
+                    
+                    </label>
+                </div>
+            </div>
+           <div class="form-group">
+             <select name="branch" id="branch">
+                <option value="cs">Computer Science</option>
+                <option value="ec"> Electronic and C</option>
+                <option value="mech">Mechanical</option>
+                <option value="civil">civil</option>
+            </select>
+           </div>
+            <div class="from-group">
+                <input type="submit" value="submit">
+            </div>
+
+
+
+        </form>
+        
+    </div>
+</body>
+</html>
